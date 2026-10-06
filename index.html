@@ -240,8 +240,13 @@
 
 <!-- PREVIOUS / NEXT TABLE -->
 <div class="bottom-bar">
-  <button class="btn btn-outline-primary" id="prevBtn">← Previous Table</button>
-  <button class="btn btn-outline-primary" id="nextBtn">Next Table →</button>
+  <button class="btn btn-outline-primary" id="prevBtn">
+    ← Previous Table
+  </button>
+
+  <button class="btn btn-outline-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ☕ Back to Café
+  </button>
 </div>
 
 <!-- PROJECT MODAL (one modal reused for all 3 projects) -->
