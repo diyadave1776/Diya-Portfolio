@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diya's Café</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR (striped awning) -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <span class="navbar-brand">🌊 Diya's Café</span>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">☰</button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link" href="#" data-go="1">🍰 About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-go="2">💻 Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-go="3">🍕 Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-go="4">📖 Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-go="5">💌 Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ALL TABLES SIT SIDE BY SIDE INSIDE THIS ROW -->
+<main id="cafe">
+
+  <!-- ENTRANCE -->
+  <section class="table-section d-flex flex-column justify-content-center text-center" id="entrance">
+    <p class="fs-4">☀️ Hello, Bonjour, Hola!!! 🫒 ⛱️ 🌊</p>
+    <h1 class="display-4 fw-bold">WELCOME TO DIYA'S CAFÉ ☕</h1>
+    <h4>A Portfolio Brewed with Code &amp; Creativity</h4>
+    <h2 class="mt-3">Diya Dave</h2>
+    <p class="fs-5">Majoring in Computer Science Engineering - @Indus University 💻</p>
+    <div><button class="btn btn-cafe btn-lg" id="enterBtn">ENTER CAFÉ →</button></div>
+  </section>
+
+  <!-- TABLE 1: ABOUT -->
+  <section class="table-section" id="about">
+    <div class="container">
+      <h2 class="table-title">TABLE 01 — MEET THE PERSON BEHIND THE CODE</h2>
+      <div class="tabletop row align-items-center g-3">
+        <div class="col-md-4 text-center">
+          <img src="profile.jpg" alt="Diya Dave" class="profile">
+        </div>
+        <div class="col-md-8">
+          <div class="menu-card">
+            <h4>☕ Today's Special: "About Me"</h4>
+            <p><b>Name:</b> Diya Dave<br><b>Occupation:</b> CSE Student</p>
+            <p><b>Introduction:</b> I am a Computer Science Engineering student having interest in Web Development .I enjoy learning new technologies and developing creative,and responsive web applications. </p>
+            <p><b>Career Goal:</b> My career objective is to build a successful career in the field of technology and software development to develop innovative and secure web applications, continuously learn emerging technologies, and contribute to real-world projects while growing as a skilled IT professional.</p>
+            <p><b>Interests:</b>
+              <span class="badge bg-info">Cyber Security</span>
+              <span class="badge bg-warning text-dark">Data Science</span>
+              <span class="badge bg-success">Web Development</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="chairs">🪑 🌸 🪑</div>
+    </div>
+  </section>
+
+  <!-- TABLE 2: SKILLS -->
+  <section class="table-section" id="skills">
+    <div class="container">
+      <h2 class="table-title">TABLE 02 — SKILLS MENU</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="menu-card tabletop">
+            <h4>💻 TECH SPECIALS</h4>
+            <!-- Replace with real skills and star ratings -->
+            <div class="item"><span>[SKILL 1]</span><span>[⭐⭐⭐]</span></div>
+            <div class="item"><span>[SKILL 2]</span><span>[⭐⭐⭐]</span></div>
+            <div class="item"><span>[SKILL 3]</span><span>[⭐⭐⭐]</span></div>
+            <div class="item"><span>[SKILL 4]</span><span>[⭐⭐⭐]</span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="menu-card tabletop">
+            <h4>🍋 SOFT SKILLS</h4>
+            <div class="item"><span>Communication</span></div>
+            <div class="item"><span>Teamwork</span></div>
+            <div class="item"><span>Problem Solving</span></div>
+            <div class="item"><span>Creativity</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLE 3: PROJECTS (exactly 3) -->
+  <<section class="table-section" id="projects">
+  <div class="container">
+    <h2 class="table-title">TABLE 03 — TODAY'S SPECIALS</h2>
+
+    <div class="row g-3">
+
+      <!-- PROJECT 01 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="project01.jpg" class="card-img-top" alt="4 PM Somewhere Coffee Project">
+
+          <div class="card-body">
+            <h5><br>4 PM Somewhere Coffee Project</h5>
+
+            <p>
+              <small>Ingredients:</small><br>
+              <span class="badge bg-danger">[HTML]</span>
+              <span class="badge bg-primary">[CSS]</span>
+              <span class="badge bg-warning text-dark">[JAVASCRIPT]</span>
+            </p>
+
+            <a href="https://krisha-2401.github.io/the4pmCafe/"
+               target="_blank"
+               class="btn btn-cafe project-btn">
+              VIEW PROJECT
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- PROJECT 02 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="dress.jpg" class="card-img-top" alt="Style Studio Fashion Project">
+
+          <div class="card-body">
+            <h5><br>Style Studio Fashion Project</h5>
+
+            <p>
+              <small>Ingredients:</small><br>
+              <span class="badge bg-danger">[HTML]</span>
+              <span class="badge bg-primary">[CSS]</span>
+              <span class="badge bg-warning text-dark">[JAVASCRIPT]</span>
+            </p>
+
+            <a href="https://krisha-2401.github.io/StyleStudio/"
+               target="_blank"
+               class="btn btn-cafe project-btn">
+              VIEW PROJECT
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- PROJECT 03 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="project03.jpg" class="card-img-top" alt="Vibe Escape Mood Project">
+
+          <div class="card-body">
+            <h5><br>Vibe Escape Mood Project</h5>
+
+            <p>
+              <small>Ingredients:</small><br>
+              <span class="badge bg-danger">[HTML]</span>
+              <span class="badge bg-primary">[CSS]</span>
+              <span class="badge bg-warning text-dark">[JAVASCRIPT]</span>
+            </p>
+
+            <a href="https://krisha-2401.github.io/vibescape/"
+               target="_blank"
+               class="btn btn-cafe project-btn">
+              VIEW PROJECT
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- TABLE 4: EDUCATION -->
+  <section class="table-section" id="education">
+    <div class="container">
+      <h2 class="table-title">TABLE 04 — LEARNING MENU</h2>
+      <div class="menu-card tabletop mx-auto" style="max-width:600px;">
+        <h4 class="text-center">🧾 RECEIPT OF LEARNING</h4>
+        <div class="item d-block"><b>☕ MAIN COURSE</b><br>B.Tech / B.E. — Computer Science Engineering<br>INDUS UNIVERSITY | 2024-2028</div>
+        <div class="item d-block"><b>🍰 CLASS 12</b><br>BEST HIGH SCHOOL,AHMEDABAD | 2024 | 79%</div>
+        <div class="item d-block"><b>🧁 CLASS 10</b><br>BEST HIGH SCHOOL,AHMEDABAD | 2022 | 80%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLE 5: CONTACT -->
+  <section class="table-section" id="contact">
+    <div class="container">
+      <h2 class="table-title">TABLE 05 — LET'S CONNECT</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="menu-card tabletop">
+            <h4>🍰 DESSERT OF THE DAY</h4>
+            <p class="fst-italic">"Let's Connect!"</p>
+            <p>📧 davediya1776@gmail.com</p>
+            <p>💻 diyadave1776</p>
+            <p>💼 Diya Dave</p>
+          
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Frontend-only form: it is validated but NOT sent anywhere -->
+          <form id="contactForm" class="tabletop">
+            <input type="text" id="name" class="form-control mb-2" placeholder="Your Name">
+            <input type="text" id="email" class="form-control mb-2" placeholder="Your Email">
+            <textarea id="message" class="form-control mb-2" rows="3" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn-cafe">Send Message</button>
+            <p id="formMsg" class="mt-2 mb-0"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLE 6: EXIT -->
+  <section class="table-section d-flex flex-column justify-content-center text-center" id="exit">
+    <h1 class="fw-bold">THANK YOU FOR VISITING! ☕</h1>
+    <p class="fs-4">"Hope you enjoyed your coffee and your visit!"</p>
+    <h3>COME BACK SOON ✨</h3>
+    <div class="mt-3">
+      <a href="#" class="btn btn-cafe m-1">GitHub</a>
+      <a href="#" class="btn btn-cafe m-1">LinkedIn</a>
+      <a href="#" class="btn btn-cafe m-1">Email</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- PREVIOUS / NEXT TABLE -->
+<div class="bottom-bar">
+  <button class="btn btn-outline-primary" id="prevBtn">← Previous Table</button>
+  <button class="btn btn-outline-primary" id="nextBtn">Next Table →</button>
+</div>
+
+<!-- PROJECT MODAL (one modal reused for all 3 projects) -->
+<div class="modal fade" id="projectModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalName"></h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p id="modalDesc"></p>
+        <p><b>Technologies Used:</b> <span id="modalTech"></span></p>
+        <a id="modalLink" href="#" target="_blank">Project Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

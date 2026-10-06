@@ -1,0 +1,70 @@
+/* Colours: Aegean blue, whitewash, sand, terracotta, bougainvillea pink */
+:root {
+  --blue: #1e6fb8;
+  --sky: #d9f0ff;
+  --sand: #fff4dc;
+  --terra: #e07a5f;
+  --pink: #e75a97;
+}
+
+body { overflow: hidden; font-family: 'Segoe UI', sans-serif; color: #2b3a55; }
+h1, h2, h3, h4, h5 { font-family: Georgia, serif; }
+
+/* Navbar with a blue-and-white striped awning underneath */
+.navbar {
+  background: #fff;
+  border-bottom: 10px solid;
+  border-image: repeating-linear-gradient(90deg, var(--blue) 0 20px, #fff 20px 40px) 1;
+}
+.navbar-brand { color: var(--blue) !important; font-weight: bold; }
+
+/* The café: all tables in one horizontal row */
+#cafe {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  height: 100vh;
+}
+
+/* Each table = one full-screen section */
+.table-section {
+  min-width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-align: start;
+  padding: 90px 10px 80px;
+  background: linear-gradient(var(--sky), var(--sand) 60%);
+}
+#entrance { background: linear-gradient(var(--sky), #fff 55%, #8fd3f4); }
+#exit { background: linear-gradient(#8fd3f4, var(--sand)); }
+
+.table-title { color: var(--blue); text-align: center; margin-bottom: 20px; }
+
+/* Table top and menu card */
+.tabletop {
+  background: #fff;
+  border: 6px solid var(--blue);
+  border-radius: 25px;
+  box-shadow: 0 8px 0 var(--terra);
+  padding: 20px;
+}
+.menu-card { background: #fffdf5; border: 3px dashed var(--terra); border-radius: 15px; padding: 15px; }
+
+/* Menu item with dotted line (skills, education) */
+.item { display: flex; justify-content: space-between; border-bottom: 2px dotted var(--terra); padding: 6px 0; }
+
+.profile { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 5px solid var(--pink); background: var(--sky); }
+.card { border: 3px solid var(--blue); border-radius: 20px; overflow: hidden; }
+.card-img-top { height: 150px; object-fit: cover; background: var(--sky); }
+.chairs { text-align: center; font-size: 2rem; margin-top: 15px; }
+
+/* Buttons */
+.btn-cafe { background: var(--pink); color: #fff; border: 0; border-radius: 30px; }
+.btn-cafe:hover { background: var(--terra); color: #fff; }
+
+/* Fixed Previous / Next bar */
+.bottom-bar {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  display: flex; justify-content: space-between;
+  padding: 10px 15px; background: #fff; border-top: 4px solid var(--blue);
+}
